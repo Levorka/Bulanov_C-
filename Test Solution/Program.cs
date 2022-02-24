@@ -43,7 +43,7 @@ namespace Test_Solution
                     int[] firdData = new int[arraylength];
                     for (var i = 0;i< arraylength; i++)
                     {
-                        Console.WriteLine("Введите элемент массива под номером" + i);
+                        Console.WriteLine("Введите элемент массива под номером " + i);
                         firdData[i] = Convert.ToInt32(Console.ReadLine());
                     }
                     Console.Clear();
