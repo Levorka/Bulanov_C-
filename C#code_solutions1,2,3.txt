@@ -12,7 +12,9 @@ namespace Test_Solution
         static void Main(string[] args)
         {
             bool isEnd = true;
-            int exerciseNumber=0;
+            int exerciseNumber=0;               
+            int firstData=0;
+            int arraylength = 0;
             while (isEnd)
             {
                 Console.WriteLine("Введите номер задания 1,2 или 3");
@@ -25,7 +27,15 @@ namespace Test_Solution
                 {
                     Console.WriteLine("Составить алгоритм: если введенное число больше 7, то вывести “Привет”");
                     Console.WriteLine("Введите целое число:");
-                    int firstData = Convert.ToInt32(Console.ReadLine());
+                    try
+                    {
+                        firstData = Convert.ToInt32(Console.ReadLine());
+                    }
+                    catch 
+                    { 
+                        Console.WriteLine("Неверный формат"); 
+                    }
+
                     ExerciseOne(firstData);
                 }
                 else if (exerciseNumber == 2)
@@ -39,12 +49,27 @@ namespace Test_Solution
                 else if (exerciseNumber == 3)
                 {
                     Console.WriteLine("Введите количество элементов вашего массива");
-                    int arraylength = Convert.ToInt32(Console.ReadLine());
+                    try
+                    {
+                        arraylength = Convert.ToInt32(Console.ReadLine());
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Неверный формат");
+                    }
                     int[] firdData = new int[arraylength];
                     for (var i = 0;i< arraylength; i++)
                     {
                         Console.WriteLine("Введите элемент массива под номером " + i);
-                        firdData[i] = Convert.ToInt32(Console.ReadLine());
+                        try
+                        {
+                            firdData[i] = Convert.ToInt32(Console.ReadLine());
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Неверный формат");
+                            break;
+                        }
                     }
                     Console.Clear();
                     ExerciseThree(firdData);
@@ -77,7 +102,7 @@ namespace Test_Solution
         {
             foreach (var item in userArray)
             {
-                if (item % 3 == 0)
+                if (item != 0 && item % 3 == 0)
                     Console.WriteLine(item);
             }
         }
