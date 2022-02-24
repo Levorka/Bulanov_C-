@@ -1,0 +1,7 @@
+C:\Users\Levor\source\repos\Test Solution\Test Solution\bin\Debug\Test Solution.exe.config
+C:\Users\Levor\source\repos\Test Solution\Test Solution\bin\Debug\Test Solution.exe
+C:\Users\Levor\source\repos\Test Solution\Test Solution\bin\Debug\Test Solution.pdb
+C:\Users\Levor\source\repos\Test Solution\Test Solution\obj\Debug\Test Solution.csprojAssemblyReference.cache
+C:\Users\Levor\source\repos\Test Solution\Test Solution\obj\Debug\Test Solution.csproj.CoreCompileInputs.cache
+C:\Users\Levor\source\repos\Test Solution\Test Solution\obj\Debug\Test Solution.exe
+C:\Users\Levor\source\repos\Test Solution\Test Solution\obj\Debug\Test Solution.pdb
